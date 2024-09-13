@@ -8,12 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/noto-emoji':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@fontsource/archivo-black':
         specifier: ^5.1.0
         version: 5.1.0
       '@fontsource/geist-sans':
         specifier: ^5.1.0
         version: 5.1.0
+      elysium:
+        specifier: 'file:'
+        version: 'file:'
+      svelte-icons:
+        specifier: ^2.1.0
+        version: 2.1.0
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
@@ -250,6 +259,9 @@ packages:
   '@eslint/plugin-kit@0.1.0':
     resolution: {integrity: sha512-autAXT203ixhqei9xt+qkYOvY8l6LAFIdT2UXc/RPNeUVfqRF1BV94GTJyVPFKT8nFM6MyVJhjLj9E8JWvf5zQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource-variable/noto-emoji@5.1.0':
+    resolution: {integrity: sha512-ZwU5VsfTIanw4HgKr32/6XPalUIHGUZGdkHCnrttneKWT/pFy0iYxt5mdUEoIuVqjagbxEP8quWamkBXP6oHqg==}
 
   '@fontsource/archivo-black@5.1.0':
     resolution: {integrity: sha512-t/Ks/4w/HJyhOkGnMpf+m/ZEY1iAblM/ZANcXVludfJJITKvhjTsvZkvM0Qx4T+q5EeYldtzGhV7wlk9iA4jFw==}
@@ -598,6 +610,9 @@ packages:
 
   electron-to-chromium@1.5.19:
     resolution: {integrity: sha512-kpLJJi3zxTR1U828P+LIUDZ5ohixyo68/IcYOHLqnbTPr/wdgn4i1ECvmALN9E16JPA6cvCG5UG79gVwVdEK5w==}
+
+  'elysium@file:':
+    resolution: {directory: '', type: directory}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1280,6 +1295,9 @@ packages:
       svelte:
         optional: true
 
+  svelte-icons@2.1.0:
+    resolution: {integrity: sha512-rHPQjweEc9fGSnvM0/4gA3pDHwyZyYsC5KhttCZRhSMJfLttJST5Uq0B16Czhw+HQ+HbSOk8kLigMlPs7gZtfg==}
+
   svelte@5.0.0-next.244:
     resolution: {integrity: sha512-whSOcKdpuAFd5xD9J2EhuHeRs4J4nHis6NSUKRXpC3HQoCmsoKhyIldMjiv6QFkQpe6QMsid8lwvgLXkZTSC/A==}
     engines: {node: '>=18'}
@@ -1526,6 +1544,8 @@ snapshots:
   '@eslint/plugin-kit@0.1.0':
     dependencies:
       levn: 0.4.1
+
+  '@fontsource-variable/noto-emoji@5.1.0': {}
 
   '@fontsource/archivo-black@5.1.0': {}
 
@@ -1832,6 +1852,12 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.19: {}
+
+  'elysium@file:':
+    dependencies:
+      '@fontsource-variable/noto-emoji': 5.1.0
+      '@fontsource/archivo-black': 5.1.0
+      '@fontsource/geist-sans': 5.1.0
 
   emoji-regex@8.0.0: {}
 
@@ -2458,6 +2484,8 @@ snapshots:
       postcss-scss: 4.0.9(postcss@8.4.45)
     optionalDependencies:
       svelte: 5.0.0-next.244
+
+  svelte-icons@2.1.0: {}
 
   svelte@5.0.0-next.244:
     dependencies:

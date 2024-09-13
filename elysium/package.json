@@ -34,7 +34,10 @@
     },
     "type": "module",
     "dependencies": {
+        "@fontsource-variable/noto-emoji": "^5.1.0",
         "@fontsource/archivo-black": "^5.1.0",
-        "@fontsource/geist-sans": "^5.1.0"
+        "@fontsource/geist-sans": "^5.1.0",
+        "elysium": "file:",
+        "svelte-icons": "^2.1.0"
     }
 }
