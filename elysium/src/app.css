@@ -1,6 +1,7 @@
 @import "@fontsource/geist-sans/index.css";
 @import "@fontsource/archivo-black/index.css";
 @import "@fontsource-variable/noto-emoji";
+@import "@fontsource/geist-mono";
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";

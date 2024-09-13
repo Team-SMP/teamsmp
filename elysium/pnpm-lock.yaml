@@ -14,6 +14,9 @@ importers:
       '@fontsource/archivo-black':
         specifier: ^5.1.0
         version: 5.1.0
+      '@fontsource/geist-mono':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@fontsource/geist-sans':
         specifier: ^5.1.0
         version: 5.1.0
@@ -265,6 +268,9 @@ packages:
 
   '@fontsource/archivo-black@5.1.0':
     resolution: {integrity: sha512-t/Ks/4w/HJyhOkGnMpf+m/ZEY1iAblM/ZANcXVludfJJITKvhjTsvZkvM0Qx4T+q5EeYldtzGhV7wlk9iA4jFw==}
+
+  '@fontsource/geist-mono@5.1.0':
+    resolution: {integrity: sha512-MDFgmKUdDbV357vD2bOZAro597Nd2md01GAdr3GSZteCJQdPT/UhHUBCAxl9KUiH03aMPFM9Rx7x8/EtrJmpKg==}
 
   '@fontsource/geist-sans@5.1.0':
     resolution: {integrity: sha512-4AI/UxIcZiYgK6/cTo4R9oM4VHHLcFdHVv7m2+M42VyY16hhKJADrGe4HPjTxvolmce2IZX/jc6sFJ+GkLB64w==}
@@ -1549,6 +1555,8 @@ snapshots:
 
   '@fontsource/archivo-black@5.1.0': {}
 
+  '@fontsource/geist-mono@5.1.0': {}
+
   '@fontsource/geist-sans@5.1.0': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
@@ -1858,6 +1866,7 @@ snapshots:
       '@fontsource-variable/noto-emoji': 5.1.0
       '@fontsource/archivo-black': 5.1.0
       '@fontsource/geist-sans': 5.1.0
+      svelte-icons: 2.1.0
 
   emoji-regex@8.0.0: {}
 

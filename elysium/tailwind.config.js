@@ -10,6 +10,7 @@ export default {
                 sans: ['"Geist Sans"', ...fontFamily.sans],
                 title: ['"Archivo Black"', '"Geist Sans"', ...fontFamily.sans],
                 emoji: ['"Noto Emoji Variable"'],
+                mono: ['"Geist Mono"', ...fontFamily.mono]
             },
             backgroundImage: {
                 "hero-img": "url('/img/lobby-herobg.png')",

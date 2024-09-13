@@ -16,7 +16,7 @@
     <TitleBlock title="About Us" subtitle="TEAM SMP" />
 
     <!-- Main Text Content -->
-    <div id="maintext" class="xl:max-w-xl">
+    <div id="maintext">
         <Para lead>
             Hello there, friend! Here's what you need to know about the Team
             SMP.
