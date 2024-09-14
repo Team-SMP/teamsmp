@@ -26,7 +26,7 @@
             <MdClose></MdClose>
         </button>
         <h2 class="mb-4 mt-3 text-3xl font-bold">Team SMP</h2>
-        <div class="flex flex-col gap-2">
+        <div class="ms-4 flex flex-col gap-0.5">
             {#each navlinks as link}
                 <span class="block p-1">
                     <a

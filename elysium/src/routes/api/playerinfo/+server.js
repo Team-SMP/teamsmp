@@ -39,11 +39,11 @@ export async function GET({ url }) {
                         playerkills: jsonData.kill_data.player_kills_total,
                         mobkills: jsonData.kill_data.mob_kills_total,
                         deaths: jsonData.kill_data.deaths_total,
-                        weapons: {
-                            1: jsonData.kill_data.weapon_1st,
-                            2: jsonData.kill_data.weapon_2nd,
-                            3: jsonData.kill_data.weapon_3rd,
-                        },
+                        weapons: [
+                            jsonData.kill_data.weapon_1st.replace(/_/g, " "),
+                            jsonData.kill_data.weapon_2nd.replace(/_/g, " "),
+                            jsonData.kill_data.weapon_3rd.replace(/_/g, " "),
+                        ],
                     },
                     playtime: {
                         total: jsonData.info.playtime,
