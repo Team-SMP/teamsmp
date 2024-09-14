@@ -19,6 +19,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Join &bull; Team SMP</title>
+</svelte:head>
+
 <MainBlock>
     <TitleBlock title="Join" subtitle="TEAM SMP" />
 
