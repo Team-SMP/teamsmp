@@ -11,4 +11,8 @@ export const navlinks = [
         url: "/join",
         name: "Join",
     },
+    {
+        url: "/player",
+        name: "Player stats",
+    },
 ];

@@ -4,7 +4,7 @@
 </script>
 
 <div
-    class="mb-4 w-fit rounded-lg bg-hero-img bg-cover xl:w-full"
+    class="mb-4 w-full rounded-lg bg-hero-img bg-cover text-white"
     id="titleblock"
 >
     <div
