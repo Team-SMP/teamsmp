@@ -1,9 +1,12 @@
 <script>
-    import Nav from "$lib/components/Nav.svelte";
+    import NavNew from "$lib/components/NavNew.svelte";
     import "../app.css";
+    import { Toaster } from "$lib/components/ui/sonner";
 </script>
 
-<div class="min-h-screen text-lg dark:bg-zinc-950 dark:text-white">
-    <Nav></Nav>
+<Toaster richColors closeButton theme="dark" />
+
+<div class="min-h-screen">
+    <NavNew></NavNew>
     <slot></slot>
 </div>

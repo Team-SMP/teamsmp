@@ -4,7 +4,7 @@
     import Para from "$lib/components/Para.svelte";
     import Sect from "$lib/components/Sect.svelte";
     import Heading from "$lib/components/Heading.svelte";
-
+    import { toast } from "svelte-sonner";
     let serverIp = "teamsmp.spdns.eu:33221";
 
     function copyIpToClipboard() {
@@ -12,9 +12,13 @@
             .writeText(serverIp)
             .then(() => {
                 console.log("Copied server IP to clipboard: ", serverIp);
+                toast.success("Copied server IP to clipboard!");
             })
             .catch((error) => {
                 console.error("Failed to copy server IP: ", error);
+                toast.error("Error copying server IP to clipboard", {
+                    description: "Check console for more details",
+                });
             });
     }
 </script>

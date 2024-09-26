@@ -2,11 +2,16 @@
     import MainBlock from "$lib/components/MainBlock.svelte";
     import Para from "$lib/components/Para.svelte";
     import TitleBlock from "$lib/components/TitleBlock.svelte";
+    import { Input } from "$lib/components/ui/input";
+    import { Button } from "$lib/components/ui/button";
 
     import { goto } from "$app/navigation";
 
     let searchterm = "";
 
+    /**
+     * @param {string} term
+     */
     function search(term) {
         if (term != "") {
             goto(`/player/stats?player=${term}`);
@@ -23,16 +28,16 @@
             below!</Para
         >
         <div class="flex w-full flex-row gap-1 lg:w-2/3 xl:w-1/2">
-            <input
-                class="flex-grow rounded-s-md border-none bg-zinc-200 dark:bg-zinc-800"
+            <Input
+                class="w-max"
                 placeholder="JunglTemple"
                 type="text"
                 bind:value={searchterm}
             />
-            <button
-                class="rounded-e-md bg-zinc-200 px-3 disabled:cursor-not-allowed disabled:bg-zinc-300 disabled:text-zinc-500 dark:bg-zinc-800 disabled:dark:bg-zinc-900 disabled:dark:text-zinc-400"
+            <Button
+                variant="secondary"
                 disabled={searchterm == ""}
-                on:click={() => search(searchterm)}>Search</button
+                on:click={() => search(searchterm)}>Search</Button
             >
         </div>
     </div>

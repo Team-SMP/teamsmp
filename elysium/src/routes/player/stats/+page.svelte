@@ -5,6 +5,7 @@
     import { onMount } from "svelte";
     import Sect from "$lib/components/Sect.svelte";
     import Heading from "$lib/components/Heading.svelte";
+    import { toast } from "svelte-sonner";
 
     /**
      * @typedef {Object} PlayerData
@@ -49,6 +50,9 @@
         if (!playername) {
             error = "Player parameter is missing";
             loading = false;
+            toast.error("Player parameter missing!", {
+                description: "Try searching for a player again.",
+            });
             return;
         }
 
@@ -70,6 +74,9 @@
         } catch (err) {
             // @ts-ignore
             error = err.message;
+            toast.error("Oops! An error occurred!", {
+                description: error ?? "Hmm...",
+            });
         } finally {
             loading = false;
         }
@@ -103,7 +110,7 @@
                     <li>Mob kills: {playerdata.stats.killdata.mobkills}</li>
                     <li>Deaths: {playerdata.stats.killdata.deaths}</li>
                 </ul>
-                <ul class="mb2">
+                <ul class="mb-2">
                     <li>
                         Best weapon: <span class="capitalize"
                             >{playerdata.stats.killdata.weapons.at(0)}</span
