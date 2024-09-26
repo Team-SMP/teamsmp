@@ -1,0 +1,13 @@
+name: aetherium
+version: '0.0.0-dev2'
+main: uk.teamsmp.aetherium.Aetherium
+api-version: '1.20'
+prefix: "aetherium"
+load: STARTUP
+authors: [ JunglTemple ]
+description: The NEW custom Team SMP plugin!
+website: https://teamsmp.pages.dev
+commands:
+  modvote:
+    description: Vote for a moderator
+    usage: /modvote <moderator_name>
