@@ -1,5 +1,5 @@
 name: aetherium
-version: '0.0.0-dev2'
+version: '0.0.0-dev4'
 main: uk.teamsmp.aetherium.Aetherium
 api-version: '1.20'
 prefix: "aetherium"
@@ -11,3 +11,6 @@ commands:
   modvote:
     description: Vote for a moderator
     usage: /modvote <moderator_name>
+  srvi:
+    description: Functions for Survival Island
+    uasge: /srvi <function>

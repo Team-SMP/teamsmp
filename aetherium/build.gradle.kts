@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "uk.teamsmp"
-version = "0.0.0-dev2"
+version = "0.0.0-dev4"
 
 repositories {
     mavenCentral()

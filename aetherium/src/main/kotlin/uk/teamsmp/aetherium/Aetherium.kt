@@ -1,10 +1,13 @@
 package uk.teamsmp.aetherium
 
+import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.plugin.java.JavaPlugin
 import uk.teamsmp.aetherium.commands.*
+import uk.teamsmp.aetherium.utils.Utils
 
 class Aetherium : JavaPlugin() {
-    val chatPrefix = "<gradient:#8922bd:blue:aqua><b>ᴀᴇᴛʜᴇʀɪᴜᴍ</b></gradient> <grey>> <reset>"
+    val mm = MiniMessage.miniMessage()
+    val chatPrefix = "<gradient:#8922bd:blue:aqua><b>${Utils.smallCaps("aetherium")}</b></gradient> <grey>> <reset>"
 
     override fun onEnable() {
         getCommand("modvote")?.apply {
@@ -12,6 +15,11 @@ class Aetherium : JavaPlugin() {
             tabCompleter = ModVoteCommand(this@Aetherium)
         }
         logger.info("Command MODVOTE has been registered.")
+        getCommand("srvi")?.apply {
+            setExecutor(SrviCommand(this@Aetherium))
+            tabCompleter = SrviCommand(this@Aetherium)
+        }
+        logger.info("Command SRVI has been registered.")
         logger.info("aetherium has loaded")
         logger.info("Hold onto your pickaxes! aetherium is now live!")
     }
